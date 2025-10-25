@@ -92,9 +92,7 @@ local function openCityhallMenu(location)
         {
             header = 'Close Menu',
             txt = '',
-            params = {
-                event = 'qb-menu:client:closeMenu'
-            }
+            action = function() exports['qb-menu']:closeMenu() end
         }
     }
     exports['qb-menu']:openMenu(mainMenu)
